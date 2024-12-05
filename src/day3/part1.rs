@@ -37,7 +37,7 @@ pub fn main() {
         if new_line.find(",") != None {
             let two_nums= new_line.split(",").collect::<Vec<_>>();
             
-            if (two_nums.len() == 2) {
+            if two_nums.len() == 2 {
                 let first = two_nums[0].parse::<i32>();
                 let second = two_nums[1].parse::<i32>();
 
