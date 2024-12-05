@@ -37,49 +37,49 @@ fn main() {
     let local_time = Utc::now().with_timezone(&New_York);
     let day = local_time.day() as usize;
 
-	let day_modules= [
-		[day1::part1::main, day1::part2::main],
-		[day2::part1::main, day2::part2::main],
-		[day3::part1::main, day3::part2::main],
-		[day4::part1::main, day4::part2::main],
-		[day5::part1::main, day5::part2::main],
-		// [day6::part1::main, day6::part2::main],
-		// [day7::part1::main, day7::part2::main],
-		// [day8::part1::main, day8::part2::main],
-		// [day9::part1::main, day9::part2::main],
-		// [day10::part1::main, day10::part2::main],
-		// [day11::part1::main, day11::part2::main],
-		// [day12::part1::main, day12::part2::main],
-		// [day13::part1::main, day13::part2::main],
-		// [day14::part1::main, day14::part2::main],
-		// [day15::part1::main, day15::part2::main],
-		// [day16::part1::main, day16::part2::main],
-		// [day17::part1::main, day17::part2::main],
-		// [day18::part1::main, day18::part2::main],
-		// [day19::part1::main, day19::part2::main],
-		// [day20::part1::main, day20::part2::main],
-		// [day21::part1::main, day21::part2::main],
-		// [day22::part1::main, day22::part2::main],
-		// [day23::part1::main, day23::part2::main],
-		// [day24::part1::main, day24::part2::main],
-		// [day25::part1::main, day25::part2::main],
-		// [day26::part1::main, day26::part2::main],
-		// [day27::part1::main, day27::part2::main],
-		// [day28::part1::main, day28::part2::main],
-		// [day29::part1::main, day29::part2::main],
-		// [day30::part1::main, day30::part2::main],
-		// [day31::part1::main, day31::part2::main],
-	];
+    let day_modules = [
+        [day1::part1::main, day1::part2::main],
+        [day2::part1::main, day2::part2::main],
+        [day3::part1::main, day3::part2::main],
+        [day4::part1::main, day4::part2::main],
+        [day5::part1::main, day5::part2::main],
+        // [day6::part1::main, day6::part2::main],
+        // [day7::part1::main, day7::part2::main],
+        // [day8::part1::main, day8::part2::main],
+        // [day9::part1::main, day9::part2::main],
+        // [day10::part1::main, day10::part2::main],
+        // [day11::part1::main, day11::part2::main],
+        // [day12::part1::main, day12::part2::main],
+        // [day13::part1::main, day13::part2::main],
+        // [day14::part1::main, day14::part2::main],
+        // [day15::part1::main, day15::part2::main],
+        // [day16::part1::main, day16::part2::main],
+        // [day17::part1::main, day17::part2::main],
+        // [day18::part1::main, day18::part2::main],
+        // [day19::part1::main, day19::part2::main],
+        // [day20::part1::main, day20::part2::main],
+        // [day21::part1::main, day21::part2::main],
+        // [day22::part1::main, day22::part2::main],
+        // [day23::part1::main, day23::part2::main],
+        // [day24::part1::main, day24::part2::main],
+        // [day25::part1::main, day25::part2::main],
+        // [day26::part1::main, day26::part2::main],
+        // [day27::part1::main, day27::part2::main],
+        // [day28::part1::main, day28::part2::main],
+        // [day29::part1::main, day29::part2::main],
+        // [day30::part1::main, day30::part2::main],
+        // [day31::part1::main, day31::part2::main],
+    ];
 
-	println!("Day {}", day);
+    println!("Day {}", day);
 
-	println!("");
+    println!("");
 
-	println!("Part 1: ");
-	day_modules[day - 1][0]();
+    println!("Part 1: ");
+    day_modules[day - 1][0]();
 
-	println!("");
+    println!("");
 
-	println!("Part 2: ");
-	day_modules[day - 1][1]();
+    println!("Part 2: ");
+    day_modules[day - 1][1]();
 }

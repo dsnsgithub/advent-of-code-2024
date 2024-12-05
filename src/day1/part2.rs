@@ -13,7 +13,7 @@ pub fn main() {
         first_destinations.push(line_array[0].parse().unwrap());
         second_destinations.push(line_array[1].parse().unwrap());
     }
-    
+
     let mut sum: i64 = 0;
     for value in first_destinations {
         let distance = value * second_destinations.iter().filter(|x| **x == value).count() as i64;

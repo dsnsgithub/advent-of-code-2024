@@ -22,21 +22,20 @@ pub fn main() {
     //     sum += first_num * second_num
     // }
 
-
     // println!("{}", sum)
 
     let mut sum = 0;
     while line.find("mul(") != None && line.find(")") != None {
         let start_index = line.find("mul(").unwrap();
-        line.replace_range(0..start_index+4, "");
+        line.replace_range(0..start_index + 4, "");
 
         let end_index = line.find(")").unwrap();
 
         let new_line = line[0..end_index].to_string();
-        
+
         if new_line.find(",") != None {
-            let two_nums= new_line.split(",").collect::<Vec<_>>();
-            
+            let two_nums = new_line.split(",").collect::<Vec<_>>();
+
             if two_nums.len() == 2 {
                 let first = two_nums[0].parse::<i32>();
                 let second = two_nums[1].parse::<i32>();
@@ -44,11 +43,10 @@ pub fn main() {
                 if Result::is_ok(&first) && Result::is_ok(&second) {
                     let first_num = first.unwrap();
                     let second_num = second.unwrap();
-                    
+
                     // println!("{}*{}", &first_num, &second_num);
                     sum += first_num * second_num;
                 }
-                
             }
         }
     }

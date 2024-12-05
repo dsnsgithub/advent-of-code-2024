@@ -16,7 +16,7 @@ pub fn main() {
 
     first_destinations.sort();
     second_destinations.sort();
-    
+
     let mut sum: i64 = 0;
     for (first, second) in first_destinations.iter().zip(second_destinations.iter()) {
         let distance = (first - second).abs();
