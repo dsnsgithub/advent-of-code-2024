@@ -5,7 +5,7 @@ mod day1 { pub mod part1; pub mod part2; }
 mod day2 { pub mod part1; pub mod part2; }
 mod day3 { pub mod part1; pub mod part2; }
 mod day4 { pub mod part1; pub mod part2; }
-// mod day5 { pub mod part1; pub mod part2; }
+mod day5 { pub mod part1; pub mod part2; }
 // mod day6 { pub mod part1; pub mod part2; }
 // mod day7 { pub mod part1; pub mod part2; }
 // mod day8 { pub mod part1; pub mod part2; }
@@ -37,12 +37,12 @@ fn main() {
     let local_time = Utc::now().with_timezone(&New_York);
     let day = local_time.day() as usize;
 
-	let day_modules: [[fn(); 2]; 4] = [
+	let day_modules= [
 		[day1::part1::main, day1::part2::main],
 		[day2::part1::main, day2::part2::main],
 		[day3::part1::main, day3::part2::main],
 		[day4::part1::main, day4::part2::main],
-		// [day5::part1::main, day5::part2::main],
+		[day5::part1::main, day5::part2::main],
 		// [day6::part1::main, day6::part2::main],
 		// [day7::part1::main, day7::part2::main],
 		// [day8::part1::main, day8::part2::main],
